@@ -32,4 +32,4 @@ docker run collector
 - Prometheus metrics
 - OpenTelemetry tracing
 - Kafka ingestion pipeline
-- graceful shutdown (signals) (!!!)# data_collector
+- graceful shutdown (signals) (!!!)
