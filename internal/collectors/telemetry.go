@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	"concurrent-collector/internal/infra"
-	"concurrent-collector/internal/models"
+	"your-module/internal/infra"
+	"your-module/internal/models"
 )
 
 type TelemetryCollector struct {
@@ -27,7 +27,7 @@ func (t *TelemetryCollector) Fetch() ([]models.DataPoint, error) {
 
 	err := t.retry.Do(func() error {
 		if rand.Intn(10) < 3 {
-			return errors.New("telemetry API error")
+			return errors.New("telemetry api error")
 		}
 
 		out = []models.DataPoint{
